@@ -12,7 +12,11 @@ export default {
         'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
-        "primary-gradient": 'var(--primaryGradient)'
+        "primary-gradient-color": "var(--primary-gradient)",
+        'shades-secondary': 'var(--shades-secondary)',
+       },
+       backgroundImage: {
+        "primary-gradient": "var(--primary-gradient)",
        },
        fontFamily: {
         sans: ['Poppins', 'sans-serif'],

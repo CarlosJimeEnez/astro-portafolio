@@ -8,7 +8,6 @@
       --primary: #118cdf;
       --secondary: #148f70;
       --accent: #149f4e;
-      --primaryGradient: linear-gradient(180deg, #2E4563 0%, #25283E 47%, #1E1E2E 64%);
     }
     .dark {
       --text: #ebe9fc;
@@ -16,8 +15,16 @@
       --primary: #229DEE;
       --secondary: #71EBCC;
       --accent: #5EEB98;
-      --primaryGradient: linear-gradient(180deg, #2E4563 0%, #25283E 47%, #1E1E2E 64%);
+      --shades-secondary: #365a5c;
+      --primary-gradient: linear-gradient(180deg, #2E4563 0%, #25283E 47%, #1E1E2E 64%);
     }
+    
+    .text-gradient {
+      background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 47%, var(--accent) 64%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     @import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
 
     body {
