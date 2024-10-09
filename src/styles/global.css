@@ -36,7 +36,7 @@
       bottom: 0;
       z-index: -1; /* Asegura que la sombra esté debajo del botón */
       border-radius: inherit; /* Asegura que la sombra tenga los mismos bordes redondeados que el botón */
-      background: var(--shades-accent);
+      background: var(--primary);
       filter: blur(15px); /* Ajusta el desenfoque para simular una sombra */
     }
 
