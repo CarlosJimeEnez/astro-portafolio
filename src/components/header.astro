@@ -3,13 +3,13 @@
     import IconBadge from './IconBadge.astro';
 ---
 
-<div class="flex items-center bg-transparent justify-between p-3 mx-auto w-full fixed top-0 left-0 z-50">
+<div class="flex items-center bg-transparent justify-center p-3  w-full fixed top-0 left-0 z-50">
 
-    <div class="text-text ">
+    <div class="absolute left-0 text-text p-3">
         <small>México/Puebla</small>
     </div>
 
-    <div class="flex items-center mx-auto justify-center space-x-2">
+    <div class="flex items-center justify-center space-x-2">
         <IconBadge text="Linkedin" href="https://www.linkedin.com/in/jose-carlos-jim%C3%A9nez-pe%C3%B1a-95307820b/">
             <svg slot="icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.25 3.83334H5.75004C4.69149 3.83334 3.83337 4.69146 3.83337 5.75001V17.25C3.83337 18.3086 4.69149 19.1667 5.75004 19.1667H17.25C18.3086 19.1667 19.1667 18.3086 19.1667 17.25V5.75001C19.1667 4.69146 18.3086 3.83334 17.25 3.83334Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,10 +27,11 @@
         </IconBadge>
     </div>
 
-    <button>
+    <button class="text-text absolute right-0 p-3">
         <div>
             <img src="/moon.png" class="w-6 h-6" alt="moon icon" >
         </div>
     </button>
     
 </div>
+
