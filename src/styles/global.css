@@ -11,18 +11,33 @@
     }
     .dark {
       --text: #ebe9fc;
+      --text-subtitle: #b1b1d1;
       --background: #1E1E2E;
       --primary: #229DEE;
       --secondary: #71EBCC;
       --accent: #5EEB98;
+      --shades-accent: #18C35F;
       --shades-secondary: #365a5c;
       --primary-gradient: linear-gradient(180deg, #2E4563 0%, #25283E 47%, #1E1E2E 64%);
     }
     
     .text-gradient {
-      background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 47%, var(--accent) 64%);
+      background: linear-gradient(90deg, #229DEE 0%, #71EBCC 50%, #5EEB98 100%);;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .shadow-gradient::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1; /* Asegura que la sombra esté debajo del botón */
+      border-radius: inherit; /* Asegura que la sombra tenga los mismos bordes redondeados que el botón */
+      background: var(--shades-accent);
+      filter: blur(15px); /* Ajusta el desenfoque para simular una sombra */
     }
 
     @import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
@@ -52,3 +67,32 @@
     small {font-size: 0.85rem; /* 13px */}
   }
   
+  @media (max-width: 640px) {
+    h1 {font-size: 2.125rem; /* 67.36px */}
+    h2 {font-size: 1.8rem; /* 32px */}
+    h3 {font-size: 1.75rem; /* 28px */}
+    h4 {font-size: 1.5rem; /* 24px */}
+    h5 {font-size: 1.25rem; /* 20px */}
+    small {font-size: 0.75rem; /* 12px */}
+  }
+  
+  @media (min-width: 641px) and (max-width: 768px) {
+    h1 {font-size: 2.7rem; /* 67.36px */}
+    h2 {font-size: 2.5rem; /* 32px */}
+    h3 {font-size: 2.125rem; /* 28px */}
+    h4 {font-size: 1.625rem; /* 24px */}
+    h5 {font-size: 1.75rem; /* 20px */}
+    small {font-size: 0.8rem; /* 12px */}
+  }
+  
+  @media (min-width: 769px) {
+    .text-sm-desktop {
+      font-size: 1.125rem; /* 18px */
+    }
+    .text-base-desktop {
+      font-size: 1.25rem; /* 20px */
+    }
+    .text-lg-desktop {
+      font-size: 1.5rem; /* 24px */
+    }
+  }
